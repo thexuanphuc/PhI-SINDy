@@ -16,7 +16,7 @@ import torch_optimizer as optim_all
 import matplotlib.pyplot as plt
 from matplotlib.ticker import StrMethodFormatter
 plt.style.use("seaborn-v0_8-whitegrid")
-
+from manual_sindy import get_feature_names
 
 def print_learnt_equation(learnt_coeffs, params):
     """"

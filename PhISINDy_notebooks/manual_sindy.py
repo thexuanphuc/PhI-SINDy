@@ -86,6 +86,7 @@ def get_feature_names(params):
     list
         the list containing the assumed features as strings
     """
+    # TODO: modify the name for our case, take index sample from apply_features
     return [*[f"cos({ph:.1f} t)" for ph in params.cos_phases], 
             *[f"sin({ph:.1f} t)" for ph in params.sin_phases], 
             *["sgn(x)",] * params.x_sgn_flag,
