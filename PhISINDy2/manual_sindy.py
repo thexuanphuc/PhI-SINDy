@@ -43,7 +43,6 @@ def apply_features(x, t, params, torch_flag=True):
     
     """
     pol_indeces = list(chain.from_iterable(combinations_with_replacement(range(x.shape[1]), i) for i in range(params.poly_order + 1)))
-
     if torch_flag:
         return T.column_stack(
             (
